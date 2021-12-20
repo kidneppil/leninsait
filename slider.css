@@ -1,0 +1,47 @@
+
+.h1{
+    font-size: 60px;
+}
+
+.Slider{
+    width: 800px; 
+    height: 800px;
+    padding: 10px;
+    position: relative; /* Относительное позиционирование картинок */
+    display: inline-block;
+}
+
+.sliderSlide{
+    position: absolute;
+}
+
+.sliderSlideActive{
+    animation: slideADD 0.5s linear;
+    opacity: 1;
+}
+
+.sliderSlideInactive{
+    animation: slideMOVE 0.5s linear;
+    opacity: 0;
+}
+
+.sliderButton{
+    position: absolute;  
+    top: 50%;
+    opacity: 0.5;
+}
+
+.sliderButtonLeft{
+    left:10px;
+    transform: translateY(-50%);
+}
+
+.sliderButtonRight{
+    right:10px;
+    transform: translateY(-50%);
+}
+
+article{
+    vertical-align: top;
+    text-align: center;  
+}

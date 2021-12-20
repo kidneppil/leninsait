@@ -1,0 +1,22 @@
+*{
+    padding: 0%;
+    margin: 10px;
+}
+.backet{
+    width: 500px;
+    height: 500px;
+    background: center center/cover no-repeat url("https://opt-1598471.ssl.1c-bitrix-cdn.ru/upload/iblock/862/gsakf74qaps1y0wrackilllvqpfz5xzf.jpg?1621406273114994");
+    padding-top: 100px;
+    
+}
+.shop{
+    display: flex;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.item{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+h2{text-align: center;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.flex-col-child-row{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+.flex-col-child{
+    line-height: 0.001cm;
+    margin-top: 50px;
+}
+button{display: block;transform: translateX(85%);margin-top: -30px;}
+textarea{width: 280px;}
+h5{display: block;width: 130px;}
+ul{list-style: none; }
+li{margin-bottom: 3px;}
+ul h5{
+    margin: 0;
+    margin-bottom: 12px; 
+    width: auto;
+}
+.input_center{
+    outline: none;
+    width: 120px;
+    background: linear-gradient(to left,#ccd1e3,#e4e7f0);
+    border: 2px groove green;
+    border-radius: 10px;
+    height: 30px;
+}
+#Question2,button{
+    outline: none;
+    background: linear-gradient(to left,#ccd1e3,#e4e7f0);
+    border: 2px groove green;
+    border-radius: 10px;
+    height: 30px;
+}        
+input[type="radio"] {
+     margin-right: 15px;
+}
+
+
+.grid-wrapper{
+    display:grid;
+    grid-template-columns:  1fr 400px 1fr;
+    grid-template-rows: 100px 1fr 7px;
+    grid-template-areas: 
+    "header header header"
+    "left middle right"
+    "footer footer footer";
+}
+.grid-header,
+.grid-left,
+.grid-middle,
+.grid-right,
+.grid-footer{
+    margin:0px 0px 15px 0px;
+    /* border: 2px dashed; */
+    padding: 30px;
+}
+.grid-header{
+    grid-area: header;
+}
+.grid-left{
+    grid-area: left;
+    
+}
+.grid-middle{
+    grid-area: middle;
+    border: 1px solid green;
+    border-radius: 50px;
+    box-shadow: 0 0 50px green;
+    
+}
+.grid-right{
+    grid-area: right;
+}
+.grid-footer{
+    grid-area: footer;
+}
+.sent{
+    bottom:5px;
+    
+    transform: translateX(65%);
+    margin-top: auto;
+}
+.window{
+    display: block;
+    position: fixed; /* Абсолютное позиционирование */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    background: linear-gradient(to left,#ccd1e3,#e4e7f0);
+    width: 200px;
+    height: 200px;
+    border: 5px solid green;
+    border-radius: 10px;  
+}
