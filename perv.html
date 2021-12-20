@@ -1,0 +1,60 @@
+<!doctype html>
+<title>Example</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "one one one one one one two two two seven"
+    "one one one one one one two two two seven"
+    "one one one one one one three three three seven"
+    "four four four five five five five five five seven"
+    "six six six eight eight eight nine nine nine seven ";
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+div{
+  padding: 20px;
+  background: gold;
+}
+#pageOne {
+  grid-area: one;
+}
+#pageTwo {
+  grid-area: two;
+}
+#pageThree { 
+  grid-area: three;      
+  }
+#pageFour { 
+  grid-area: four; 
+  }
+#pageFive { 
+  grid-area: five; 
+  }
+  #pageSix { 
+  grid-area: six; 
+  }
+  #pageSeven { 
+  grid-area: seven; 
+  }
+  #pageEight { 
+  grid-area: eight; 
+  }
+  #pageNine { 
+  grid-area: nine; 
+  }
+</style>
+<body>
+  <div id="pageOne">one</div>
+  <div id="pageTwo">two</div>
+  <div id="pageThree">three</div>
+  <div id="pageFour">four</div>
+  <div id="pageFive">five</div>
+  <div id="pageSix">six</div>
+  <div id="pageSeven">seven</div>
+  <div id="pageEight">eight</div>
+  <div id="pageNine">nine</div>
+</body>

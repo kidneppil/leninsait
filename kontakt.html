@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rg.css">
+</head>
+<body>
+    
+    <div>
+        
+        <div class="grid-wrapper">
+            <header class="grid-header">
+               
+            </header>
+
+            <aside class="grid-left" >                
+                
+            </aside>
+
+            <main class="grid-middle" class="flex-col">
+                <div  class="flex-col-child1">
+                    <ul>
+                        <li><h5>Как вам удобно получить ответ?</h5></li>
+                        <li>
+                            <input name="answer" type="radio" value="Ответ На почту" id="mail" class="first"/>
+                            <lable for="mail" >По почте</lable>
+                        </li>
+                        <li>
+                            <input name="answer" type="radio" value="Ответ На телефон" id="phone" class="first">
+                            <lable for="phone">По телефону</lable> 
+                        </li>
+                        <li>
+                            <input name="answer" type="radio" value="Без обратной связи" checked id="noone" class="first">
+                            <lable for="noone">Не нужно отвечать</lable>
+                        </li>                 
+                    </ul>                    
+                </div>
+              
+                <div class="flex-col-child">
+                    <ul>
+                        <li><h5>Укажите тему вопроса</h5></li>
+                        <li>
+                            <select name="qs1" id="Question2" class="second">
+                                <option value="День Рождения">День Рождения</option>
+                                <option value="Поздравления">Поздравления</option>
+                                <option value="Восьмое марта">Восьмое марта</option>
+                                <option value="Пятница">Пятница</option>
+                            </select>
+                        </li>
+                    </ul>                       
+                </div>
+                
+                <div class="flex-col-child">
+                    <ul>
+                        <li><h5>Еще один вопрос?</h5></li>
+                        <li><input class="therd" type="checkbox" name="ch" value="может">может так</li>
+                        <li><input class="therd" type="checkbox" name="ch" value="или нет">или не так</li>
+                        <li><input class="therd" type="checkbox" name="ch" value="по-другому">иначе</li>
+                    </ul>              
+                </div>
+        
+                <div class="flex-col-child-row">
+                    <div>
+                        <h5>Ваше имя</h5>
+                    </div>
+                    <div>
+                        <input class="input_center" type="text" size="30" id="name">
+                    </div>                   
+                </div>
+        
+                <div class="flex-col-child-row">
+                    <div>
+                        <h5>Адрес почты</h5>
+                    </div>
+                    <div>
+                        <input class="input_center" type="text" size="30" id="adress">
+                    </div>                   
+                </div>
+        
+                <div class="flex-col-child-row">
+                    <div>
+                        <h5>Номер телефона</h5>
+                    </div>
+                    <div>
+                        <input class="input_center" type="text" size="30" id="number">
+                    </div>                  
+                </div>   
+        
+                <div  class="flex-col-child">
+                    <ul>
+                        <li><h5>Ваш вопрос:</h5></li>
+                        <li><textarea class="input_center1 forth" name="comment" cols="40" rows="3" ></textarea>   </li>
+                    </ul>
+                    
+                    
+                </div>
+                <div  class="flex-col-child button-center">
+                    
+                    <button class="check_it">Отправить</button>
+                                 
+                </div> 
+            </main>
+
+            <aside class="grid-right"> 
+                
+            </aside>
+
+            <footer class="grid-footer">
+
+            </footer>
+        </div>
+    </div>
+
+    
+
+    <div class="window" id="window" style="display: none;">
+        <div id="x1"></div>
+        <div id="x2"></div>
+        <div id="x3"></div>
+        <div id="x4"></div>
+        <div id="x5"></div>
+        <div id="x6"></div>
+        <div id="x7"></div>
+        <button class="sent" onclick="delet();">Отправить</button>
+    </div>
+    <script src="kontakt.js"></script>
+</body>
+</html>
