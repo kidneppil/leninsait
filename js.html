@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="rg.css">
+    <link rel="stylesheet" href="canvas.css">
+    <link rel="stylesheet" href="dragn.css">
+    <link rel="stylesheet" href="kukilocal.css">
+</head>
+<body backgroundcolor="#FFFFFF" id ="background">
+    <div class="topnav">
+        <a href="index.html"><img src="https://i.pinimg.com/originals/24/73/72/247372c3c0373c4dc76f6a6e99b2697c.jpg" 
+        alt="картиночка" width="50"></a>
+        <a href="index.html">О себе</a>
+        <a href="rezumme.html">Резюме</a>
+        <a href="portfol.html">Портфолио</a>
+        <a href="kompetetion.html">Компетенции</a>
+        <a href="kontakt.html">Контакты</a>
+        <a href="perv.html">Грид</a>
+        <a href="#">ЖаваСкрипт</a>
+        <!-- <a href="vtor.html">Слайд</a>
+        <a href="canvas.html">Канвас</a>
+        <a href="dragn.html">Драгн</a>
+        <a href="kukilocal.html">Локал</a> -->
+      </div>
+      
+      <div class="header">
+        <h1 class="webt">Веб-технологии</h1>
+        <h1 class="uniw">Университет "Дубна"</h1>
+      </div>
+      <div class="main">
+        <h1 class="kajd" id="text">Каждый уважающий себя рыбак знает, что рыба, среди всех видов кукуруз, предпочитает исключительно кукурузу "Бандюэль". 
+        Кукуруза "Бандюэль" - идеально сбалансирована между сладость и солёностью, жизнью и смертью, землёй и водой, прочим и прочим, 
+        и прочим и прочим. На все остальные виды кукуруз рыба клюёт нехотя, только из большого голода и в засушливые времена.
+        <br></br>
+        По строгому секрету, только для наших самых преданных читателей, делимся - лучшая приманка для карасей и окуней размеров среднего 
+        кита - червь по-глубже на крючке и прикрыть остриё вкуснейшей кукурузинкой. Улов получается, что называется "бомбовый".
+        </h1>
+      </div>
+      
+    <div class="anin">
+    <button id ="svetlo" onclick="changecolor('white', 'black');">Светлая</button>
+      <button id ="temno" onclick="changecolor('black', 'white');">Темная</button>
+      
+      <script>
+        function changecolor (backgroundColor, textColor) {
+            var body = document.getElementById("background");
+            var element = document.getElementById("text");
+            element.style.color=textColor;
+            body.style.background=backgroundColor;
+        }
+    </script><button id="showContent">Показать</button>
+<button id="hideContent">Скрыть</button>
+<div id="text" style="display:none;"></div>
+<div id="svetlo" style="display:none;"></div>
+<div id="temno" style="display:none;"></div>
+<script>
+    let text = document.getElementById("text")
+    let svetlo = document.getElementById("svetlo")
+    let temno = document.getElementById("temno")
+    let show = document.getElementById("showContent")
+    let hide = document.getElementById("hideContent")
+
+    show.addEventListener("click", () => {
+    text.style.display = "block"
+    svetlo.style.display = "block"
+    temno.style.display = "block"
+})
+hide.addEventListener("click", () => {
+text.style.display = "none"
+svetlo.style.display = "none"
+temno.style.display = "none"
+})   
+</script>
+    </div>
+    
+    <h1 class="adfg">Фото</h1>
+    <div class="Slider" id="slider1">
+        <div class="sliderSlide sliderSlideActive"><img src="1.png" width="800px"></div>
+        <div class="sliderSlide sliderSlideInactive"><img src="2.png" width="800px"></div>
+        <div class="sliderSlide sliderSlideInactive"><img src="3.png" width="800px"></div>
+        <div class="sliderSlide sliderSlideInactive"><img src="4.png" width="800px"></div>
+        <div class="sliderSlide sliderSlideInactive"><img src="5.png" width="800px"></div>
+        
+        <span class="sliderButton sliderButtonLeft" onclick="slideSmena('slider1', 'left');"><img src="strelka1.png" width="30px"/></span>
+        <span class="sliderButton sliderButtonRight" onclick="slideSmena('slider1', 'right');"><img src="strelka2.png" width="30px"/></span>
+    </div>
+    
+    <script src="script.js"></script>
+
+    <h1 class="adfg">Контакты</h1>
+    <div>
+        
+        <div class="grid-wrapper">
+            <header class="grid-header">
+               
+            </header>
+
+            <aside class="grid-left" >                
+                
+            </aside>
+
+            <main class="grid-middle" class="flex-col">
+                <div  class="flex-col-child1">
+                    <ul>
+                        <li><h5>Как вам удобно получить ответ?</h5></li>
+                        <li>
+                            <input name="answer" type="radio" value="Ответ На почту" id="mail" class="first"/>
+                            <lable for="mail" >По почте</lable>
+                        </li>
+                        <li>
+                            <input name="answer" type="radio" value="Ответ На телефон" id="phone" class="first">
+                            <lable for="phone">По телефону</lable> 
+                        </li>
+                        <li>
+                            <input name="answer" type="radio" value="Без обратной связи" checked id="noone" class="first">
+                            <lable for="noone">Не нужно отвечать</lable>
+                        </li>                 
+                    </ul>                    
+                </div>
+              
+                <div class="flex-col-child">
+                    <ul>
+                        <li><h5>Укажите тему вопроса</h5></li>
+                        <li>
+                            <select name="qs1" id="Question2" class="second">
+                                <option value="День Рождения">День Рождения</option>
+                                <option value="Поздравления">Поздравления</option>
+                                <option value="Восьмое марта">Восьмое марта</option>
+                                <option value="Пятница">Пятница</option>
+                            </select>
+                        </li>
+                    </ul>                       
+                </div>
+                
+                <div class="flex-col-child">
+                    <ul>
+                        <li><h5>Еще один вопрос?</h5></li>
+                        <li><input class="therd" type="checkbox" name="ch" value="может">может так</li>
+                        <li><input class="therd" type="checkbox" name="ch" value="или нет">или не так</li>
+                        <li><input class="therd" type="checkbox" name="ch" value="по-другому">иначе</li>
+                    </ul>              
+                </div>
+        
+                <div class="flex-col-child-row">
+                    <div>
+                        <h5>Ваше имя</h5>
+                    </div>
+                    <div>
+                        <input class="input_center" type="text" size="30" id="name">
+                    </div>                   
+                </div>
+        
+                <div class="flex-col-child-row">
+                    <div>
+                        <h5>Адрес почты</h5>
+                    </div>
+                    <div>
+                        <input class="input_center" type="text" size="30" id="adress">
+                    </div>                   
+                </div>
+        
+                <div class="flex-col-child-row">
+                    <div>
+                        <h5>Номер телефона</h5>
+                    </div>
+                    <div>
+                        <input class="input_center" type="text" size="30" id="number">
+                    </div>                  
+                </div>   
+        
+                <div  class="flex-col-child">
+                    <ul>
+                        <li><h5>Ваш вопрос:</h5></li>
+                        <li><textarea class="input_center1 forth" name="comment" cols="40" rows="3" ></textarea>   </li>
+                    </ul>
+                    
+                    
+                </div>
+                <div  class="flex-col-child button-center">
+                    
+                    <button class="check_it">Отправить</button>
+                                 
+                </div> 
+            </main>
+
+            <aside class="grid-right"> 
+                
+            </aside>
+
+            <footer class="grid-footer">
+
+            </footer>
+        </div>
+    </div>
+
+    
+
+    <div class="window" id="window" style="display: none;">
+        <div id="x1"></div>
+        <div id="x2"></div>
+        <div id="x3"></div>
+        <div id="x4"></div>
+        <div id="x5"></div>
+        <div id="x6"></div>
+        <div id="x7"></div>
+        <button class="sent" onclick="delet();">Отправить</button>
+    </div>
+    <script src="kontakt.js"></script>  
+
+    <h1 class="adfg">Диаграмма</h1>
+ 
+    <textarea name="textarea" id="textarea" cols="30" rows="2" placeholder="введите количество столбцов"></textarea><br>
+    <button class="draw">кнопка</button><br>
+    <canvas id="canvas" style="border: 1px solid black;" width="500" height="500"></canvas>
+    <script src="canvascript.js"></script>
+
+    <h1 class="adfg">Корзина</h1>
+    <div class="shop">
+        <div class="items">
+            <img src="https://st3.depositphotos.com/5971822/13110/i/950/depositphotos_131102048-stock-photo-fresh-juicy-dill-isolated-on.jpg" 
+            width="100" height="100" alt="укроп" class="item" draggable="true">
+            <img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1614520080_4-p-kot-na-belom-fone-4.jpg" 
+            width="100" height="100" alt="кошка" class="item" draggable="true">
+            <img src="https://agroprom-zai.ru/image/catalog/products/kartoffel-kleister.jpg" 
+            width="100" height="100" alt="картошка" class="item" draggable="true">
+            <img src="https://avatars.mds.yandex.net/get-o-yandex/3892166/f431b6261867a2b7689f2510c59860fd/778x1036" 
+            width="100" height="100" alt="вода" class="item" draggable="true">
+            <button class="clear">очистить корзину</button>
+        </div>
+        <div class="backet" draggable="true"></div>
+    </div>
+    <p class="names-items"></p>
+    <script src="dragn.js"></script>
+
+    <h1 class="adfg">Память...</h1>
+    <div class="flex-row-div">
+
+        <div>
+            <h2>
+                ВЫбираем цвет Кукисом
+            </h2>
+            <div id="div-for-cookie"></div>
+            <input id="color-button1" class="dark-button" type="button" value="не этот"></input>
+        </div>
+
+        <div>
+            <h2>
+                ВЫбираем любимый цвет Локалом
+            </h2>
+            <div id="div-for-local"></div>
+            <input id="color-button" class="dark-button" type="button" value="другой"></input>
+        </div>
+    </div>
+
+    <script src="kuki.js"></script>
+    <script src="local.js"></script>
+
+
+
+
+      <div class="footer">
+        <div class="icon">
+        <a href="https://vk.com/dezainru"><img src="https://pbs.twimg.com/media/E7ZX1_lXoAgrM4u.png"
+        alt="vk" width="50"></a>
+        <a href="https://instagram.com/kidneppil"><img src="https://www.detaytemizlik.com.tr/view/images/instagram.png"
+        alt="inst" width="45"></a>
+        <a href="https://vk.com/kidneppil"><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/1047281/images/6568412/github-1.svg"
+        alt="vk" width="50"></a>
+        </div>
+        <p class="sait">Сайт разработан Лёней Макаровым, Copyright © 2021</p>
+      </div>
+
+</body>
+</html>
+</body>
+</html>

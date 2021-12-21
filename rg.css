@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 h2{text-align: center;}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 .flex-col{
     display: flex;
     flex-direction: column;
@@ -22,7 +20,7 @@ body{
     line-height: 0.001cm;
     margin-top: 50px;
 }
-button{display: block;transform: translateX(85%);margin-top: -30px;}
+.sent{display: block;transform: translateX(85%);margin-top: -30px;}
 textarea{width: 280px;}
 h5{display: block;width: 130px;}
 ul{list-style: none; }
@@ -40,7 +38,7 @@ ul h5{
     border-radius: 10px;
     height: 30px;
 }
-#Question2,button{
+#Question2,.sent{
     outline: none;
     background: linear-gradient(to left,#ccd1e3,#e4e7f0);
     border: 2px groove green;
